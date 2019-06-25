@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>CoffeeCols</title>
+	
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/ajaxupload.3.5.js" ></script>
+	<script type="text/javascript" src="js/upload-image.js" ></script>
+	<script type="text/javascript" src="js/upload-text.js" ></script>
+	<script type="text/javascript" src="js/equalcolumns.js"></script> 
+	<script src="bootstrap/js/bootstrap.min.js"></script>	
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+</head>
+<body class="container">
+	<div class="row">
+		<div class="col-md-10 col-sm-12 col-md-offset-1 col-xs-12">
+			<div class="row">
+				<div class="row">
+					<div class="col-md-12 col-xs-12">
+						<h1>CoffeeCols</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-xs-12">
+						<nav class="navbar navbar-inverse" role="navigation">
+						  <div class="container-fluid">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+							  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							  </button>
+							</div>
+
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse my-nav" id="bs-example-navbar-collapse-9">
+							  <ul class="nav navbar-nav">
+								<li class="my-selected"><a href="index.php">Home</a></li>
+								<li class="my-selected visible-xs"><a href="#" data-toggle="modal"  data-target="#myModal">Add Item</a></li>								
+							
+							  </ul>
+							</div><!-- /.navbar-collapse -->
+						  </div><!-- /.container-fluid -->
+						</nav>
+					</div>
+				</div>
+				<div class="row my-row">
+					<div class="col-md-12 col-xs-12" id="my-intro">
+						<header>
+							<h2>Your Spiffy Tag Line Goes Here</h2>
+						</header>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+						<img src="images/introimage.png" alt="lime" />
+					</div>
+				</div>
+			</div>
+			
+			##PAGE##	
+			
+			
+			<div class="row">
+				<div class="col-md-12 col-xs-12 footer">
+					<div class="col-md-4 col-xs-12 section">
+						<h3>Left Stuff</h3>
+						<p>Left aligned text here. Proin metus odio, ultricies eu pharetra dictum, laoreet id odio. 
+						Curabitur in odio augue. Morbi congue auctor interdum. Phasellus sit amet metus justo.</p>
+					</div>
+				
+					<div class="col-md-4 col-xs-12 section">
+						<h3>Center Stuff</h3>
+						<p>Center Text here. Proin metus odio, ultricies eu pharetra dictum, laoreet id odio. Curabitur in odio augue. 
+							Morbi congue auctor interdum. Phasellus sit amet metus justo.</p>
+					</div>
+					
+					<div class="col-md-4 col-xs-12 section">
+						<h3>Center Stuff</h3>
+						<p>&copy; 2014 <a href="#" title="coffeecols.com">coffeecols.com</a> All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header my-modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<h4 class="modal-title" id="myModalLabel">Add Item Form</h4>
+		  </div>
+		  <form id="myForm">
+			 <div class="modal-body form-horizontal">
+			  <div class="form-group">
+				<label for="short-name" class="col-sm-3 control-label">Short Name</label>
+				<div class="col-sm-9">
+				  <input type="test" class="form-control" id="shortname" placeholder="short name">
+				</div>
+			  </div>
+			  <div class="form-group">
+				<label for="long-name" class="col-sm-3 control-label">Long Name</label>
+				<div class="col-sm-9">
+				  <input type="text" class="form-control" id="longname" placeholder="long name">
+				</div>
+			  </div>
+			  <div class="form-group">
+				<label for="description" class="col-sm-3 control-label">Description</label>
+				<div class="col-sm-9">
+				  <textarea class="form-control" rows="5" id="description" placeholder="description"></textarea>
+				</div>
+			  </div>
+			</div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<button type="submit" class="btn btn-primary">Save</button>
+		  </div>
+		  </form>
+		</div>
+	  </div>
+	</div>
+	<!-- Modal End -->
+	
+	
+	
+	<!-- Modal -->
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header my-modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<h4 class="modal-title" id="myModalLabel2">Add Item Form</h4>
+		  </div>	
+			<div class="modal-body form-horizontal">
+			<form class="form-horizontal" id="uploadForm" action="upload-image.php" method="post">		  
+			  <div class="form-group">
+				<label  class="col-sm-3 control-label">Load Picture</label>
+				<div class="col-sm-9">
+					<input name="userImage" type="file" id="exampleInputFile">
+					<input type="hidden" name="content_id" id="hidden_content_id"/>
+				</div>
+			  </div>
+			  <div class="form-group">
+				<div class="col-sm-offset-3 col-sm-9">
+				  <button type="submit" class="btn btn-default">Submit</button>
+				</div>
+			  </div>
+			</form>
+			<div>Only files with  ( .jpg .png .gif  )extensions can be uploaded !</div>
+			</div> 
+			 
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  </div>
+	
+		</div>
+	  </div>
+	</div>
+	<!-- Modal End -->
+</body>
+</html>
